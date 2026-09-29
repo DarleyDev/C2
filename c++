@@ -1,16 +1,27 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    int students = 111;
-    int seats = 21;
+    string surname, name;
+    int age;
+    double weight;
 
-    int buses = (students + seats - 1) / seats;
-    int freeSeats = buses * seats - students;
+    cout << "Enter your surname: ";
+    cin >> surname;
 
-    cout << "Потребуется " << buses << " автобусов. ";
-    cout << "В последнем автобусе " << freeSeats << "/" << seats
-         << " часть мест останется свободной.";
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Enter your weight: ";
+    cin >> weight;
+
+    cout << "Hello, My name is " << surname << " " << name << "!";
+    cout << " I am " << age << " years old.";
+    cout << " I weigh " << weight << " kg.";
 
     return 0;
 }
