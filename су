@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b, c;
+    int x, y, z;
+
+    cout << "Введите цену карандаша: ";
+    cin >> a;
+    cout << "Введите количество карандашей: ";
+    cin >> x;
+
+    cout << "Введите цену тетради: ";
+    cin >> b;
+    cout << "Введите количество тетрадей: ";
+    cin >> y;
+
+    cout << "Введите цену ручки: ";
+    cin >> c;
+    cout << "Введите количество ручек: ";
+    cin >> z;
+
+    double sum = a * x + b * y + c * z;
+
+    cout << "Сумма покупки: " << sum << " рублей.";
+
+    return 0;
+}
